@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/api/account")
 public class AccountController {
 
-    public ResponseEntity insertAccount(@RequestBody PersonalAccountRequestBodyDTO requestBody) {
+    public ResponseEntity<?> insertAccount(@RequestBody PersonalAccountRequestBodyDTO requestBody) {
 
     }
 }

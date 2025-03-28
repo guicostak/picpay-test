@@ -10,11 +10,11 @@ import lombok.Data;
 @Data
 @Builder
 @Entity(name = "tb_account")
-public abstract class BankAccount {
+public abstract class BankAccountEntity {
 
     private String account;
 
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "adress_id")
-    private Adress adress;
+    private AdressEntity adressEntity;
 }
